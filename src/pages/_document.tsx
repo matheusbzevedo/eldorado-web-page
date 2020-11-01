@@ -2,6 +2,7 @@ import Document, { DocumentContext, DocumentInitialProps, Html, Head, Main, Next
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
+
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage
@@ -40,6 +41,7 @@ export default class MyDocument extends Document {
           <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
           <link rel='icon' href='/favicon.co' />
           <meta name='description' content='eSports organization' />
+          <meta name='google-site-verification' content='google-site-verification=2DI1H-9G6B-B16rL0tNIeM0Fj2D-8Uqjmv5hlSduhGs' />
           <link
             rel='preload'
             href='./fonts/Dolce Vita.ttf'

@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import { Container } from './../styles/pages/Home';
-import logoEldorado from './../assets/images/logo.svg';
 
 const Home = () => {
   return (
@@ -11,7 +10,7 @@ const Home = () => {
         <title>Eldorado Gaming | Home</title>
       </Head>
       <main>
-        <Image src={logoEldorado} width={400} height={400} draggable={false} />
+        <Image src='/images/logo.svg' width={400} height={400} draggable={false} />
         <h1>
           Caminho Para Eldorado
         </h1>

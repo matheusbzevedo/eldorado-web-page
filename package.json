@@ -4,10 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "node server.js",
+    "postinstall": "yarn build",
+    "build-dev": "next build && yarn start"
   },
   "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
     "next": "10.0.0",
     "next-images": "^1.6.2",
     "react": "17.0.1",
