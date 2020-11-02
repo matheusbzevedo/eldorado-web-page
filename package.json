@@ -4,15 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
+    "build-export": "next build && next export",
     "start": "node server.js",
-    "postinstall": "yarn build",
-    "build-dev": "next build && yarn start"
+    "postinstall": "yarn build-export",
+    "build-dev": "next build && yarn start",
+    "prod": "next start"
   },
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "next": "10.0.0",
+    "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1"
