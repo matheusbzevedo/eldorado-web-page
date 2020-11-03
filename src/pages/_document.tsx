@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
           <meta name='keywords' content='DOTA, FreeFire, LOL, eSports, e-sports, e sports, organization, organização, jogos, games, CS, counter strike, league of legends, free fire' />
           <meta name='robots' content='index, follow' />
           <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
-          <link rel='icon' href='/favicon.co' />
+          <link rel='icon' href='/favicon.ico' />
           <meta name='description' content='eSports organization' />
           <meta name='google-site-verification' content='google-site-verification=2DI1H-9G6B-B16rL0tNIeM0Fj2D-8Uqjmv5hlSduhGs' />
           <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}/>
