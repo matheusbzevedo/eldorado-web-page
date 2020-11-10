@@ -11,9 +11,11 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
 
-  html, body {
+  html, body, :root{
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
+    height: 100vh;
+
   }
 
   body {

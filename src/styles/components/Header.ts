@@ -1,35 +1,73 @@
 import styled from 'styled-components';
 
-export const Header = styled.div`
-  width: 100%;
-  /* height: 120px; */
-  background: url('/images/header_bar.png') no-repeat center center;
+export const Header = styled.header`
+  width: 100vw;
+  height: 12rem;
+  background: url('/images/header_bar.svg') no-repeat center center;
   background-size: cover;
-  .Menu {
-    list-style: none;
-    width: 100%;
-    text-align: right;
-    margin-right: 60px;
-    .MenuOption {
-      display: inline;
-      padding: 20px;
-      font-size: 18px;
-      text-transform: uppercase;
-      a {
-        display: inherit;
-        text-decoration: none;
-        color: #fff;
-      }
-      &.Social {
-        display: inline-flex;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    max-width: 85%;
+    height: 100%;
+    margin: auto;
+
+    .logo-social-box {
+      display: flex;
+      align-items: center;
+
+      .social {
+        margin-left: 3.5rem;
+        display: flex;
+        width: 14.4rem;
+        height: 4.7rem;
+        border: .2rem solid ${props => props.theme.colors.primary};
+        box-sizing: border-box;
+        border-radius: 1.1rem;
         align-items: center;
+        justify-content: center;
+
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          list-style: none;
+
+          li {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    nav {
+      width: 38vw;
+
+      ul {
+        width: 100%;
+        display: flex;
         justify-content: space-between;
-        width: 189px;
-        height: 63px;
-        margin-left: 20px;
-        border: 2px solid ${props => props.theme.colors.primary};
-        border-radius: 11px;
-        vertical-align: middle;
+        list-style: none;
+
+        li {
+          display: inline-block;
+
+          a {
+            text-transform: uppercase;
+            line-height: 2.7rem;
+            font-size: 1.8rem;
+            color: ${props => props.theme.colors.text};
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+
+            &:hover {
+              color: ${props => props.theme.colors.primary};
+            }
+          }
+        }
       }
     }
   }

@@ -7,74 +7,42 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  h1 {
-    font-size: 5.4rem;
-    color: ${props => props.theme.colors.primary};
-  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-  .Banners {
     img {
+      height: auto;
       width: 100%;
+      border-bottom: .5rem solid rgba(251, 163, 32, 0.7);
+    }
+
+    .banner-mobile {
+     display: none;
     }
   }
 
-  .Sponsors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 36px 0;
-    .Sponsor {
+  @media screen and (max-width: 425px) {
+    main {
+      height: 100%;
       display: flex;
-      align-items: center;
-      img {
-        width: 80px;
-      }
-      &:not(:last-of-type) {
-        &::after {
-          content: '';
-          display: inline;
-          border-left: 1px solid #fff;
-          height: 30px;
-          margin: 0 20px;
-        }
-      }
-    }
-  }
-
-  .Blog {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 862px;
-    width: 100%;
-    margin-bottom: 46px;
-    .Left .Title,
-    .Right .Title {
-      text-transform: uppercase;
-      font-size: 18px;
-      text-align: center;
-      padding: 36px 0 20px 0;
-    }
-    .Left,
-    .Right {
-      display: flex;
+      justify-content: space-around;
       flex-direction: column;
-      .Image {
-        width: 345px;
-        height: 225px;
-        background: #c4c4c4;
+      align-items: center;
+
+      img {
+        border: none;
+      }
+
+      .banner {
+        display: none;
+      }
+
+      .banner-mobile {
+        display: block;
       }
     }
   }
 
-  .SectionSeparator {
-    margin: 0 auto;
-    height: 5px;
-    border-width: 0;
-    color: rgba(251, 163, 32, 0.7);
-    background-color: rgba(251, 163, 32, 0.7);
-    max-width: 862px;
-    width: 100%;
-  }
 `;

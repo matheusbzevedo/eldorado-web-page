@@ -5,19 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build-export": "next build && next export",
-    "start": "node server.js",
-    "postinstall": "yarn build-export",
-    "build-dev": "next build && yarn start",
-    "prod": "next start"
+    "start": "next start",
+    "postinstall": "yarn build"
   },
   "dependencies": {
-    "compression": "^1.7.4",
-    "express": "^4.17.1",
     "next": "10.0.0",
+    "next-images": "^1.6.2",
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-icons": "^3.11.0",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -27,6 +24,7 @@
     "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.15.0",
