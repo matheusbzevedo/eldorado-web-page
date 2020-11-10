@@ -15,6 +15,7 @@ export default createGlobalStyle`
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
     height: 100vh;
+    overflow: hidden;
 
   }
 
